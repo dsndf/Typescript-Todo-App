@@ -10,11 +10,12 @@
     <div id="app">
       <h1>TS Todo App</h1>
       <form action="">
-        <input type="text" id="task-input" name="task" />
-        <button type="submit" id="btn">CREATE</button>
+        <div class="create-todo-inp">
+          <input type="text" id="task-input" name="task" placeholder="Enter todo" />
+          <button type="submit" id="btn">Create</button>
+        </div>
       </form>
-      <div class="todo-container">
-      </div>
+      <div class="todo-container"></div>
     </div>
 
     <script type="module" src="/src/main.ts"></script>

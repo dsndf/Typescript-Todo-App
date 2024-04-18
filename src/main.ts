@@ -28,6 +28,7 @@ const renderTodo = (todos: TODO[]): void => {
   todos.forEach((todo,i) => {
     const deleteButton = document.createElement("button") as HTMLButtonElement;
     deleteButton.innerText = "DELETE";
+    deleteButton.className = "delete-btn"
     deleteButton.onclick = () => {
       if (todo.isChecked) {
         deleteTodo(todo.id);
